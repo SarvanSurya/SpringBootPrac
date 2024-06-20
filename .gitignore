@@ -1,1 +1,43 @@
 /.metadata/
+# Ignore target directory
+target/
+
+# Ignore STS specific files
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# Ignore IntelliJ IDEA specific files
+.idea
+*.iws
+*.iml
+*.ipr
+
+# Ignore NetBeans specific files and directories
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+# Ignore VS Code specific files
+.vscode/
+
+# Ignore Maven wrapper except the JAR file
+!.mvn/wrapper/maven-wrapper.jar
+
+# Exclude everything in target directories except main and test targets
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Include specific packages and directories in com.jpmc.rts.springboot
+# Adjust these patterns based on your actual directory structure
+!com.jpmc.rts.springboot.controller/
+!com.jpmc.rts.springboot.models/
+!com.jpmc.rts.springboot.repository/
+!com.jpmc.rts.springboot.service/
