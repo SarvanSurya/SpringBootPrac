@@ -1,10 +1,7 @@
-HELP.md
+# Ignore target directory
 target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
 
-### STS ###
+# Ignore STS specific files
 .apt_generated
 .classpath
 .factorypath
@@ -13,21 +10,33 @@ target/
 .springBeans
 .sts4-cache
 
-### IntelliJ IDEA ###
+# Ignore IntelliJ IDEA specific files
 .idea
 *.iws
 *.iml
 *.ipr
 
-### NetBeans ###
+# Ignore NetBeans specific files and directories
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
 build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
-### VS Code ###
+# Ignore VS Code specific files
 .vscode/
+
+# Ignore Maven wrapper except the JAR file
+!.mvn/wrapper/maven-wrapper.jar
+
+# Exclude everything in target directories except main and test targets
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Include specific packages and directories in com.jpmc.rts.springboot
+# Adjust these patterns based on your actual directory structure
+!com.jpmc.rts.springboot.controller/
+!com.jpmc.rts.springboot.models/
+!com.jpmc.rts.springboot.repository/
+!com.jpmc.rts.springboot.service/
